@@ -1,0 +1,22 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.animated-element {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    position: absolute;
+    animation: moveAnimation 3s infinite alternate;
+}
+
+@keyframes moveAnimation {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100% - 100px);
+    }
+}
